@@ -30,6 +30,7 @@ var JavaScript = {
         loaded = true;
       };
     }
-    document.getElementsByTagName('head')[0].appendChild(script);
+    var head = document.getElementsByTagName("head")[0];
+    (head || document.body).appendChild(script);
   }
 };
